@@ -1,16 +1,16 @@
 {
       "name": "Hu Tao",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://telegra.ph/file/b75457eec792779e5b361.jpg",
+      "logo": "https://te.legra.ph/file/b75457eec792779e5b361.jpg",
       "keywords": [
          "telegram",
-         "sexy",
+         "modular",
          "group",
          "manager",
-         "Hutao"
+         "HuTao"
       ],   
-   "repository": "https://github.com/ImmortalXnetwork/Hu-Tao1",
-   "stack": "heroku-20",
+   "repository": "https://github.com/ImmortalXnetwork/Hu-Tao",
+   "stack": "heroku-22",
    "addons": [
       {
          "options": {
@@ -18,53 +18,70 @@
          },
          "plan": "heroku-postgresql"
       }
-   ]
+   ],
    "env": {
-      "BOT_TOKEN": {
-         "description": "Your bot token. Get one from @BotFather",
-         "required": true,
-         "value": ""
-      },
       "API_ID": {
-         "description": "Get API_ID from my.telegram.org .",
+         "description": "Get this value from my.telegram.org/apps.",
          "required": true,
          "value": ""
       },
       "API_HASH": {
-         "description": "Get API_HASH from my.telegram.org .",
+         "description": "Get this value from my.telegram.org/apps.",
          "required": true,
          "value": ""
       },
-      "SUDO": {
-         "description": "Set your best friends id as sudo.",
+      "ALLOW_EXCL": {
+         "description": "Set this to True if you want ! to be a command prefix along with /. Recommended is True",
+         "value": "True"
+      },
+      "CASH_API_KEY": {
+         "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
          "required": true,
-         "value": "" 
+         "value": ""
+      },
+      "DEL_CMDS": {
+         "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
+         "value": "True"
+      },
+      "ENV": {
+         "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
+         "required": true,
+         "value": "True"
+      },
+      "EVENT_LOGS": {
+         "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
+         "required": true,
+         "value": ""
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": true,
+         "value": ""
+      },
+      "OWNER_ID": {
+         "description": "Your user ID as an integer.",
+         "required": true,
+         "value": "1356469075"
+      },
+      "START_IMG": {
+         "description": "Telegraph link of the image which will be shown at start command.",
+         "required": true,
+         "value": ""
       },
       "SUPPORT_CHAT": {
-         "description": "your bots support chat name without @ or chat id.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to Fallen Support than consider you made an enemy.",
          "required": true,
-         "value": "NovaSupports" 
+         "value": "DevilsHeavenMF"
       },
-      "LOG_CHANNEL_ID": {
-         "description": "A channel id where bot can spam its errors ans shits.",
+      "TIME_API_KEY": {
+         "description": "Required for timezone information. Get yours from https://timezonedb.com/api",
          "required": true,
-         "value": "-123" 
+         "value": ""
       },
-      "OWNER": {
-         "description": "Id of bot owner",
+      "TOKEN": {
+         "description": "Get bot token from @BotFather on TG",
          "required": true,
-         "value": "" 
-      },
-     "DB_URL": {
-         "description": "Add a Mongodb url to store data",
-         "required": true,
-         "value": "" 
-      },
-     "SQL_URL": {
-         "description": "Add a elephantsql url to store data",
-         "required": true,
-         "value": "" 
-      },  
-         
-   }     
+         "value": ""
+      }
+   }
 }
