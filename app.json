@@ -35,20 +35,10 @@
          "required": true,
          "value": ""
       },
-      "TIMEZONE": {
-         "description": "Set time zone or leave it as it is.",
-         "required": true,
-         "value": "Asia/Kolkata"
-      },
-      "COMMAND_HANDLER": {
-         "description": " leave it as it is.",
-         "required": true,
-         "value": ". /"
-      },
       "SUDO": {
          "description": "Set your best friends id as sudo.",
          "required": true,
-         "value": "1805959544 6149191605" 
+         "value": "" 
       },
       "SUPPORT_CHAT": {
          "description": "your bots support chat name without @ or chat id.",
